@@ -1,5 +1,5 @@
 def base_out():
-    f = open('facebook.csv', 'r')
+    f = open('facebook.csv', 'r', encoding = 'utf-8')
     print('Смотрим базу')
     while True:
         a = '        '.join(f.readline().split(","))
