@@ -1,4 +1,5 @@
 import csv_creater as cr
+import csv_app as cp
 import csv_view as cv
 import csv_slay as sl
 import csv_all_view as cav
@@ -6,13 +7,13 @@ def select_number():
     # меню выбора, что делать с базой
      select_num = input("Здравствуйте, выберите действия:\n\
           '1' хотите заполнить базу\n\
-          '2' прочитать базу построчно\n\
-          '3' прочитать всю базу\n\
+          '2' хотите добавить данные в базу\n\
+          '3' прочитать базу\n\
           '4' очистить базу  ")
      if select_num == '1':
          return cr.base_in()
      if select_num == '2':
-         return cv.base_out()
+         return cp.base_in()
      if select_num == '3':
          return cav.base_out()
      if select_num == '4':

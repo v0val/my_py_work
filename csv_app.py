@@ -1,7 +1,6 @@
 def base_in():
     f = open('facebook.csv', 'a', encoding ='utf-8')
-    print('Заполняем базу')
-    f.writelines(",".join(['surname', 'name', 'telephone', 'job'])+'\n')
+    print('Добавляем данные в базу')
     while True:
         fam = input('введите фамилию ')
         name = input('введите имя ')
