@@ -17,4 +17,6 @@ def select_number():
          return cav.base_out()
      if select_num == '4':
          return sl.base_out()
+     if not select_num in {'1','2','3','4'}:
+         return print('вы выбрали номер вне диапазона')
 
